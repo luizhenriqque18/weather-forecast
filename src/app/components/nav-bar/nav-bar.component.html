@@ -1,0 +1,25 @@
+<div [ngClass]=" header ? 'header-custom':'header-details'" class="row col-12 d-flex flex-column align-items-center justify-content-center">
+    <header class="col-6" *ngIf="header; else navigation">
+        <h1>weather in your city</h1>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Your city name" (keyup)="search($event)" [value]="inputSearch"/>
+            <span class="input-group-text ion-search mr-2 "></span>
+            <div [hidden]="loadStatus" class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>  
+        </div>
+    </header>
+</div>
+<ng-template #navigation>
+    <div class="col-12 d-flex justify-content-center align-items-center position-relative">
+        <div class="arrow-back">
+            <span routerLink="/" class="ion-android-arrow-back"></span>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="input-group col-6">
+                <label class="form-control">{{inputSearch}}</label>
+                <span class="input-group-text ion-search"></span>
+            </div>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,52 @@
+.header-custom {
+    background: #39a3db;
+    height: 300px;
+}
+
+.header-details {
+    background: #39a3db;
+    height: 120px;
+}
+
+header {
+    margin-top: 88px;
+    margin-bottom: 124px;
+    text-align: center;    
+}
+
+header > h1 {
+    margin-bottom: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.input-group > .input-group-text {
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group > .form-control {
+    border-right: none;
+}
+
+.ion-search:before { 
+    font-size: 1.5rem;
+    color: #39a3db;
+}
+
+.arrow-back {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.ion-android-arrow-back {
+    color: #ffffff;
+    font-size: 1.5rem;
+
+}

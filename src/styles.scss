@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+$enable-responsive-font-sizes: true;
+/* Reset */
+body, h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height:100vh;
+    background: #f0f0f0;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+   color:#3c3c3c;
+   opacity: 0.75;
+   font-size: 0.875rem;
+}
+
+:root{
+    font-size: 16px;
+}
+
+.row { 
+    margin: 0px;
+}
+
+.max {
+    color:#b30000;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.min {
+    color: #4a90e2;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+::selection { background: transparent; } 
+::-moz-selection { background: transparent; }
+
+.table {
+    margin: 0;
+}

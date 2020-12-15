@@ -1,0 +1,26 @@
+<div class="row col-12 justify-content-center forecasts-content">
+    <div class="col-12 col-sm-12 col-md-8 list-forecasts">
+        <div class="card-forecast" *ngFor="let item of listCity" (click)="details(item.id)">
+            <div class="card-banner-forecast">
+                <h1>{{item.main.temp}}ºC</h1>
+            </div>
+            <div class="card-group-forecast">
+                <div class="d-flex align-items-center">
+                    <h3>{{item.name}}, {{item.sys.country}}</h3>
+                    <img
+                    class="pl-1" 
+                    src="http://openweathermap.org/images/flags/{{item.sys.country | lowercase }}.png" 
+                    alt="{{ item.sys.country}}">
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="d-flex"><label>Máx</label><span class="max"> {{item.main.temp_max}} ºC</span></p>
+                    <p class="d-flex"><label>Mín</label><span class="min"> {{item.main.temp_min}} ºC</span></p>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center flex-grow-1">
+                <img src="https://openweathermap.org/img/w/{{item.weather[0].icon}}.png" alt="{{ item.weather[0].description }}">
+                <p class="font-italic">{{ item.weather[0].description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

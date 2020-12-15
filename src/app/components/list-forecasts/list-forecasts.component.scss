@@ -1,0 +1,86 @@
+.forecasts-content {
+    background: #f6f6f6;
+}
+
+.list-forecasts {
+    position: absolute;
+    top: -64px;
+}
+
+.card-forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.card-group-forecast {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 40px;
+}
+
+.card-group-forecast div {
+    padding-bottom: 1.1875rem;
+}
+
+.card-group-forecast > div > h3 {
+    color: #39a3db;
+    font-size: 1.5rem;
+}
+
+.card-group-forecast > div> p {
+    padding-bottom: 0.6875rem;
+}
+
+.card-group-forecast > div> p > label {
+    opacity: 0.5;
+    color: #3c3c3c;
+    font-size: 0.875rem;
+    margin: 0;
+    width: 23%;
+}
+
+.card-group-forecast > div> p > span {
+    padding-left: 1.4375rem;
+}
+
+.card-group-forecast > label {
+    opacity: 0.5;
+    color: #3c3c3c;
+    padding-bottom: 0.6875rem;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+
+.card-banner-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 138px;
+    border-radius: 4px;
+    border: solid 1px #f0f0f0;
+    background-color: #f0f0f0;
+}
+
+.card-banner-forecast h1 {
+    opacity: 0.75;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 3rem;
+}
+
+
